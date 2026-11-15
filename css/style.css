@@ -1,0 +1,144 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Work sans' , sans-serif;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* media query */
+/* large */
+@media (min-width : 1200px){
+    .container{
+        width: 1150px;
+    }
+}
+
+@media (min-width : 990px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width : 760px){
+    .container{
+        width: 750px;
+    }
+}
+@media (max-width: 530px){
+    .container{
+       width:500px
+    }
+}
+:root {
+    --main-color: rgb(11, 165, 165);
+    --secondary-color : rgb(57, 57, 57);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 20px;
+    width: 1200px;
+}
+#logo{
+    width: 70px;
+}
+header{
+    padding: 15px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+#landing {
+    background-image: url(../images/landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#landing div{
+  text-align: center;
+}
+h1{
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+#landing p{
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+/* feature style start */
+
+#feature {
+    margin-top: 10px;
+    padding-block: 10px;
+}
+#feature .container{
+    grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));
+}
+.feat{
+    text-align: center;
+ 
+}
+
+.feat i{
+    color: var(--main-color);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.feat h3{
+    font-weight: 800;
+    margin-block: 10px;
+}
+.feat p{
+     padding-inline: 10px;
+     color: var(--secondary-color);
+}
+
+#services{
+    padding-block: 20px;
+
+}
+#services .container{
+    grid-template-columns: repeat(auto-fill,minmax(400px , 1fr));
+
+}
+#services .heading{
+    position: relative;
+    margin-block: 30px;
+}
+#services h2{
+    font-weight: 800;
+    text-align: center;
+    font-size:70px;
+    color: rgba(0,0,0,0.3);
+    
+}
+#services .explain{
+    position: absolute;
+    bottom: 0%;
+    right: 45%;
+    text-align: center;
+}
+
+#services .feat{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
