@@ -39,7 +39,7 @@ body{
     --secondary-color : rgb(57, 57, 57);
 }
 
-.container {
+.container  {
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -118,18 +118,18 @@ h1{
     grid-template-columns: repeat(auto-fill,minmax(400px , 1fr));
 
 }
-#services .heading{
+.heading{
     position: relative;
     margin-block: 30px;
 }
-#services h2{
+h2{
     font-weight: 800;
     text-align: center;
     font-size:70px;
     color: rgba(0,0,0,0.3);
     
 }
-#services .explain{
+ .explain{
     position: absolute;
     bottom: 0%;
     right: 45%;
@@ -142,3 +142,27 @@ h1{
     gap: 10px;
 }
 
+#portfolio .inner-continer {  
+        margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 20px;
+    width: 1200px;
+    grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));
+}
+.foll-progect{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.foll-progect img{
+    width: 200px;
+}
+
+#about .about-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
